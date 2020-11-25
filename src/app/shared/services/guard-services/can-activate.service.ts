@@ -5,7 +5,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/ro
   providedIn: 'root'
 })
 export class CanActivateService {
-  private canLogin = true; // Used for activating and deactivating the children components
+  private canLogin = false; // Used for activating and deactivating the children components
   constructor(private _router: Router) { }
 
   // Decide's weather the route need to be activated or not by returinging true or false

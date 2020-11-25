@@ -11,7 +11,7 @@
 
           </ion-item>
           <div class="error" *ngIf="registerationForm.get('firstname').invalid && registerationForm.get('firstname').touched">
-            {{ getErrorMessage(registerationForm, validation_messages, 'firstname', 'firstname') }}
+            {{ getErrorMessage(registerationForm, validation_messages, 'firstname') }}
           </div>
         </div>
         <div class="p-r-12">
@@ -22,7 +22,7 @@
 
           </ion-item>
           <div class="error" *ngIf="registerationForm.get('lastname').invalid && registerationForm.get('lastname').touched">
-            {{ getErrorMessage(registerationForm, validation_messages, 'lastname', 'lastname') }}
+            {{ getErrorMessage(registerationForm, validation_messages, 'lastname') }}
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@
 
           </ion-item>
           <div class="error" *ngIf="registerationForm.get('email').invalid && registerationForm.get('email').touched">
-            {{ getErrorMessage(registerationForm, validation_messages, 'email', 'email') }}
+            {{ getErrorMessage(registerationForm, validation_messages, 'email') }}
           </div>
         </div>
         <div class="p-r-12">
@@ -46,7 +46,7 @@
 
           </ion-item>
           <div class="error" *ngIf="registerationForm.get('phone').invalid && registerationForm.get('phone').touched">
-            {{ getErrorMessage(registerationForm, validation_messages, 'phone', 'phone') }}
+            {{ getErrorMessage(registerationForm, validation_messages, 'phone') }}
           </div>
         </div>
       </div>

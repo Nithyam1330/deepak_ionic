@@ -43,10 +43,9 @@ export class RegistrationComponent extends BaseClass implements OnInit {
     ]
   };
 
-  constructor(public injector: Injector,
-    private _formBuilder: FormBuilder) { 
-      super(injector);
-    }
+  constructor(private _formBuilder: FormBuilder) {
+    super();
+  }
 
   ngOnInit() {
 

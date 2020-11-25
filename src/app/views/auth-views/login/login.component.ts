@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   getInfo() {
+    RequestEnums.LOGIN.values[0] = 5;
     this.commonRequestService.request(RequestEnums.LOGIN).subscribe(res => {
       console.log(res);
     });
